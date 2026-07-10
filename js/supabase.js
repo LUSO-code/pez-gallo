@@ -1,0 +1,3 @@
+const SUPABASE_URL = 'https://eikrdfamkjwgpyzimlyk.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVpa3JkZmFta2p3Z3B5emltbHlrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NzIwNDMsImV4cCI6MjA5OTI0ODA0M30.7K1E8F2pIi4k-0yeBH1TN5e_SdS3BLy3oNrR0Rfjirc';
+const db = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
