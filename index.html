@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Pez Gallo — Cocina Tradicional de Mar | Menú Digital</title>
+  <meta name="description" content="Menú digital de Mariscos Pez Gallo. Cocina tradicional de mar en Colima, México. Ceviches, aguachiles, caldos y más. Miércoles a Domingo 12-6PM.">
+  <meta name="theme-color" content="#0A1628">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pez Gallo — Cocina Tradicional de Mar">
+  <meta property="og:description" content="Menú digital de Mariscos Pez Gallo en Colima, México. Escanea el QR y descubre nuestros platillos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.jpg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+  <!-- ========== SPLASH SCREEN ========== -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <div class="splash-logo">
+        <img src="assets/logo.jpg" alt="Pez Gallo" class="splash-logo-img">
+      </div>
+      <h1 class="splash-title">PEZ GALLO</h1>
+      <p class="splash-subtitle">Cocina tradicional de mar</p>
+      <div class="splash-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,30 1440,60 L1440,120 L0,120 Z" fill="rgba(0,212,170,0.15)"/>
+          <path d="M0,80 C360,20 720,100 1080,40 C1260,20 1380,80 1440,40 L1440,120 L0,120 Z" fill="rgba(255,107,53,0.1)"/>
+        </svg>
+      </div>
+      <p class="splash-tap">Toca para continuar</p>
+    </div>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="assets/hero-bg.jpg" alt="" class="hero__bg-img" loading="eager">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <img src="assets/logo.jpg" alt="Pez Gallo" class="hero__logo fade-in">
+      <h1 class="hero__title fade-in">PEZ GALLO</h1>
+      <p class="hero__subtitle fade-in">Cocina tradicional de mar 🍽️</p>
+      
+      <div class="hero__info fade-up">
+        <div class="info-chip" id="restaurant-status">
+          <span class="open-badge">🟢 Abierto ahora</span>
+        </div>
+        <div class="info-chip">
+          <span>⏰</span>
+          <span id="hero-hours">Miércoles a Domingo · 12:00 PM – 6:00 PM</span>
+        </div>
+        <div class="info-chip">
+          <span>📍</span>
+          <span id="hero-address">Ignacio Sandoval 515c, Colima</span>
+        </div>
+      </div>
+
+      <div class="hero__actions fade-up">
+        <a href="https://www.google.com/maps/place/Pez+Gallo/@19.2468186,-103.7177111,19z" target="_blank" rel="noopener" id="btn-maps" class="btn btn-primary">
+          <span>📍</span> Ubicación
+        </a>
+        <a href="tel:+523121318931" id="btn-call" class="btn btn-secondary">
+          <span>📞</span> Llamar
+        </a>
+        <a href="https://instagram.com/_pezgallo" target="_blank" rel="noopener" id="btn-instagram" class="btn btn-secondary">
+          <span>📸</span> Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEARCH BAR ========== -->
+  <div class="search-container">
+    <div class="search-bar glass-card">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search-input" class="search-input" placeholder="Buscar en el menú..." autocomplete="off">
+    </div>
+  </div>
+
+  <!-- ========== CATEGORY NAVIGATION ========== -->
+  <nav class="category-nav" id="category-nav">
+    <!-- Populated by JS -->
+  </nav>
+
+  <!-- ========== MENU CONTAINER ========== -->
+  <main class="menu-container" id="menu-container">
+    <!-- Populated by JS from Supabase -->
+    <div class="menu-loading">
+      <div class="loading-spinner"></div>
+      <p>Cargando menú...</p>
+    </div>
+  </main>
+
+  <!-- ========== LOCATION SECTION ========== -->
+  <section class="location-section fade-up" id="location">
+    <h2 class="section-title">📍 Encuéntranos</h2>
+    <div class="location-grid">
+      <div class="map-container glass-card">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.4!2d-103.7177111!3d19.2468186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255aaf884eaaf1%3A0x7c78761627cf8b95!2sPez%20Gallo!5e0!3m2!1ses!2smx!4v1"
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius: 16px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="location-info">
+        <div class="location-card glass-card">
+          <h3>📍 Dirección</h3>
+          <p>Ignacio Sandoval 515c</p>
+          <p>Colima, México 🌋</p>
+        </div>
+        <div class="location-card glass-card">
+          <h3>⏰ Horario</h3>
+          <p>Miércoles a Domingo</p>
+          <p>12:00 PM – 6:00 PM</p>
+          <p class="text-secondary">Cierre cocina: 5:15 PM</p>
+        </div>
+        <div class="location-card glass-card">
+          <h3>📞 Contacto</h3>
+          <p><a href="tel:+523121318931" class="link-accent">312 131 8931</a></p>
+          <p><a href="https://instagram.com/_pezgallo" target="_blank" class="link-accent">@_pezgallo</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__brand">
+        <img src="assets/logo.jpg" alt="Pez Gallo" class="footer__logo">
+        <span class="footer__name">Pez Gallo</span>
+      </div>
+      <div class="footer__links">
+        <a href="https://instagram.com/_pezgallo" target="_blank" rel="noopener">Instagram</a>
+        <a href="tel:+523121318931">Teléfono</a>
+        <a href="https://www.google.com/maps/place/Pez+Gallo/@19.2468186,-103.7177111,19z" target="_blank" rel="noopener">Mapa</a>
+      </div>
+      <p class="footer__credit">Hecho con 🐟 en Colima, México</p>
+      <a href="admin.html" class="footer__admin-link">Administración</a>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
